@@ -1,0 +1,113 @@
+ :root {
+  --color1: #12c2e9;
+  --color2: #c471ed;
+  --color3: #f64f59;
+}
+
+
+.callToAction{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 49%, var(--color3) 100%);
+}
+h1{
+    font-size: 60px;
+}
+.callToAction img{
+    transform: rotate(10deg);
+    transition: transform 0.5s ease-in-out;
+}
+.ro{
+    transform:rotate(-5deg);
+    transition: transform 0.5s ease-in-out;
+}
+.ro:hover{
+    transform:rotate(0) scale(0.95);
+}
+.ro:hover img{
+    transform: rotate(5deg);
+}
+.diva{
+    height: 1px;
+    width: 65%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 49%, var(--color3) 100%);
+}
+h2{
+    font-size: 50px;
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 49%, var(--color3) 100%);
+    /* Mask the color to the text, and remove the rest  */
+    -webkit-background-clip: text;
+    /* Make the text fill color value transparent so the masked background color comes through */
+    -webkit-text-fill-color: transparent;
+}
+h4{
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+.services i{
+    background: linear-gradient(90deg, #74e6ff73 0%, #e6b4ff63 100%);
+    color: #333333e0;
+}
+
+.model_sec{
+    height: 600px;
+    background-image: url('../img/bg-vid.jpg');
+}
+.model_sec:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007a;
+
+}
+
+.model_sec:hover:before{
+    background-color: #e6b4ff30;
+}
+.btn-holder{
+    transform: translate(-50%, -50%);
+}
+.btn_holder button{
+    width: 100px;
+    height: 100px;
+}
+.box.bg-dark{
+    width: 200px;  
+    left:100px;
+}
+.box.bg-dark:hover{
+   background-color:var(--color3) !important
+}
+.box.bg-white{
+    width: 200px;  
+    left:350px;
+}
+.box.bg-white:hover{
+    background-color:var(--color3) !important
+ }
+
+ .rotating{
+     position: absolute;
+     width: 300px;
+     animation-name: rotate;
+     animation-duration: 0.8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+ .ro2{
+     animation-delay: 0.2s;
+     animation-duration: 0.6s;
+     width: 200px;
+     left: 50px;
+     top: 50px;
+ }
+
+ @keyframes rotate {
+     0%{transform: rotate(0deg);}
+     50%{transform: rotate(180deg);}
+     100%{transform: rotate(0deg);}
+ }
